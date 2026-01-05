@@ -55,10 +55,12 @@ const CTASection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button variant="hero" size="xl">
-              Get Started
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <a href="http://118.107.139.10" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="xl">
+                Get Started
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
             <Button variant="heroOutline" size="xl">
               Explore
               <ChevronRight className="w-5 h-5" />

@@ -58,9 +58,11 @@ const Header = () => {
             <Button variant="ghost" size="sm">
               Log In
             </Button>
-            <Button variant="default" size="sm">
-              Get Started
-            </Button>
+            <a href="http://118.107.139.10" target="_blank" rel="noopener noreferrer">
+              <Button variant="default" size="sm">
+                Get Started
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -99,9 +101,11 @@ const Header = () => {
                 <Button variant="ghost" className="w-full justify-center">
                   Log In
                 </Button>
-                <Button variant="default" className="w-full justify-center">
-                  Get Started
-                </Button>
+                <a href="http://118.107.139.10" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button variant="default" className="w-full justify-center">
+                    Get Started
+                  </Button>
+                </a>
               </div>
             </div>
           </motion.div>
