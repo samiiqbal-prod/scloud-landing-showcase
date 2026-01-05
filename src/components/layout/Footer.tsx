@@ -1,9 +1,6 @@
-import { Cloud } from "lucide-react";
+import scloudLogo from "@/assets/scloud-logo.png";
 
 const footerLinks = {
-  Product: ["Features", "Pricing", "Documentation", "API Reference"],
-  Company: ["About", "Blog", "Careers", "Press"],
-  Resources: ["Community", "Support", "Status", "Terms of Service"],
   Legal: ["Privacy Policy", "Cookie Policy", "Compliance"],
 };
 
@@ -11,14 +8,11 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-background py-16 lg:py-20">
       <div className="container px-4">
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-12 lg:gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-gradient-hero flex items-center justify-center">
-                <Cloud className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold">SCloud</span>
+              <img src={scloudLogo} alt="SCloud" className="h-12 w-auto" />
             </a>
             <p className="text-background/60 max-w-sm mb-6">
               Enterprise Cloud, Simplified. Built on Tier-III certified infrastructure 
@@ -30,24 +24,22 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Links */}
-          {Object.entries(footerLinks).slice(0, 3).map(([category, links]) => (
-            <div key={category}>
-              <h4 className="font-semibold text-background mb-4">{category}</h4>
-              <ul className="space-y-3">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-sm text-background/60 hover:text-primary transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {/* Legal Links */}
+          <div>
+            <h4 className="font-semibold text-background mb-4">Legal</h4>
+            <ul className="space-y-3">
+              {footerLinks.Legal.map((link) => (
+                <li key={link}>
+                  <a
+                    href="#"
+                    className="text-sm text-background/60 hover:text-primary transition-colors"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         {/* Bottom bar */}
