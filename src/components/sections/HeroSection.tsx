@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-cloud.png";
 
 const HeroSection = () => {
@@ -72,7 +72,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex justify-center lg:justify-start"
             >
               <a href="http://118.107.139.10" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl">
@@ -80,10 +80,6 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Button>
               </a>
-              <Button variant="heroOutline" size="xl">
-                Explore
-                <ChevronRight className="w-5 h-5" />
-              </Button>
             </motion.div>
 
             {/* Trust indicators */}
@@ -96,11 +92,6 @@ const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <span className="text-2xl font-bold text-foreground">99.98%</span>
                 <span className="text-sm">Uptime SLA</span>
-              </div>
-              <div className="w-px h-8 bg-border hidden sm:block" />
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-foreground">10K+</span>
-                <span className="text-sm">Active Users</span>
               </div>
               <div className="w-px h-8 bg-border hidden sm:block" />
               <div className="flex items-center gap-2">

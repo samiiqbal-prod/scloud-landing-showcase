@@ -51,12 +51,9 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Log In
-            </Button>
+          <div className="hidden lg:flex items-center">
             <a href="http://118.107.139.10" target="_blank" rel="noopener noreferrer">
-              <Button variant="default" size="sm">
+              <Button variant="default" size="default" className="px-6 py-2.5 text-base">
                 Get Started
               </Button>
             </a>
@@ -95,9 +92,6 @@ const Header = () => {
                 ))}
               </nav>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" className="w-full justify-center">
-                  Log In
-                </Button>
                 <a href="http://118.107.139.10" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button variant="default" className="w-full justify-center">
                     Get Started
