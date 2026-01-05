@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Cloud } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import scloudLogo from "@/assets/scloud-logo.png";
 
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Infrastructure", href: "#infrastructure" },
   { label: "Security", href: "#security" },
-  { label: "Pricing", href: "#pricing" },
 ];
 
 const Header = () => {
@@ -34,10 +34,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-lg bg-gradient-hero flex items-center justify-center shadow-button group-hover:shadow-glow transition-shadow">
-              <Cloud className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">SCloud</span>
+            <img src={scloudLogo} alt="SCloud" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
